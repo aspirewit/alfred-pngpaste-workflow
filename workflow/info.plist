@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>info.chixin.alfred.pngpaste</string>
+	<key>connections</key>
+	<dict>
+		<key>9A095F56-F9E1-4198-AA66-32FA36E32392</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDD8AD2A-AE38-45A9-B40E-C99C8355CC14</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DDD8AD2A-AE38-45A9-B40E-C99C8355CC14</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Li</string>
+	<key>description</key>
+	<string>Quickly generate image files from the clipboard</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>pngpaste</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>pngpaste</string>
+				<key>subtext</key>
+				<string>Will be saved to the Download directory</string>
+				<key>text</key>
+				<string>Quickly generate image files from the clipboard</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9A095F56-F9E1-4198-AA66-32FA36E32392</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./pngpaste/pngpaste ~/Downloads/`uuidgen`.png</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DDD8AD2A-AE38-45A9-B40E-C99C8355CC14</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>9A095F56-F9E1-4198-AA66-32FA36E32392</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>DDD8AD2A-AE38-45A9-B40E-C99C8355CC14</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>chixin.info</string>
+</dict>
+</plist>
